@@ -79,7 +79,7 @@ class App extends Component {
       <>
         <Navbar />
         <Switch>
-          <Route exact path='/weather' render={() => renderData()} />
+          <Route exact path='/' render={() => renderData()} />
           <Route path='/about' component={About} />
         </Switch>
       
