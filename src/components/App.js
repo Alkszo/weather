@@ -27,8 +27,7 @@ class App extends Component {
     navigator.geolocation.getCurrentPosition(position => {
       const lat = position.coords.latitude;
       const lon = position.coords.longitude;
-      this.fetchData(lat, lon);
-      console.log(this.state.data)
+      this.fetchData(lat, lon);      
     }, () => this.setState({ locationError: true }))
   }
 

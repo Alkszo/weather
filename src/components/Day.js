@@ -6,7 +6,7 @@ const Day = ({ data, icons, getIcon }) => {
 
     const afternoon = () => data.filter(datum => datum.dt_txt.includes('15:00'))
     const represent = afternoon().length === 1 ? afternoon() : data.slice(-1)
-    console.log(data, represent)
+    
     return(
         <>
         <div className="day-card">
