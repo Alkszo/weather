@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   fetchData = (lat, lon) => {         
-      fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=metric`)
+      fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=metric`)
       .then(res => res.json())
       .then(data => {
         this.setState({ 
@@ -44,7 +44,7 @@ class App extends Component {
   onSearch = (text) => {
     
     this.setState({ searchError: false, locationError: false})
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${text}&appid=44b75055e774cc3ad102fa969f7e72c6&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${text}&appid=44b75055e774cc3ad102fa969f7e72c6&units=metric`)
     .then(res => {
       if (res.ok) {
         return res.json()
