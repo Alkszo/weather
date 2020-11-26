@@ -80,6 +80,7 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route exact path='/' render={() => renderData()} />
+          <Route path='/weather' render={() => renderData()} />
           <Route path='/about' component={About} />
         </Switch>
       
@@ -89,10 +90,3 @@ class App extends Component {
 }
 
 export default App;
-
-
- /*
-        
-       
-        <Footer />
-        */

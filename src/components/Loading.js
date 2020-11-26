@@ -5,8 +5,7 @@ const Loading = () => {
     return (
         <div className="loading">
             <p><span className="red">L</span>oading........</p>          
-            <img src={compass}/>
-                       
+            <img src={compass}/>                       
         </div>
     )
 }

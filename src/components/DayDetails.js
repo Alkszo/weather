@@ -11,37 +11,32 @@ const DayDetails = ({ data, icons, getIcon }) => {
         
         
         {data.map(hour => 
-    <>
+    
     <div className="weather-detailed-description">
         <div>
-        <p style={{color: `red`}}>{hour.dt_txt.slice(11, 16)}</p>    
+            <p className="red">{hour.dt_txt.slice(11, 16)}</p>    
         </div>
         <div className="weather-info">
 
-        <div>
-        <img src={getIcon(hour).length === 1  ? getIcon(hour)[0].icon  : `http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`} alt="icon" />
-        <p>{hour.weather[0].description}</p>
-        </div>
-        <div><p>Temperature: </p><br/>
-        <p>  {(hour.main.temp * 2).toFixed() / 2} </p>                  
-        </div>
-        <div><p>Feels like: </p><br />
-            <p>{(hour.main.feels_like * 2).toFixed() / 2}</p>
-        </div>
-        <div><p>Humidity: </p><br />
-            <p>{hour.main.humidity} %</p>
-        </div>
+            <div>
+                <img src={getIcon(hour).length === 1  ? getIcon(hour)[0].icon  : `http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`} alt="icon" />
+                <p>{hour.weather[0].description}</p>
+            </div>
+            <div><p>Temperature: </p><br/>
+                <p>  {(hour.main.temp * 2).toFixed() / 2} </p>                  
+            </div>
+            <div><p>Feels like: </p><br />
+                <p>{(hour.main.feels_like * 2).toFixed() / 2}</p>
+            </div>
+            <div><p>Humidity: </p><br />
+                <p>{hour.main.humidity} %</p>
+            </div>
 
         </div>
-    </div>
-
-   
+    </div>    
     
-    </>
-    )}
-     
-    
-        </Popup>
+    )}    
+    </Popup>
     )
 }
 
