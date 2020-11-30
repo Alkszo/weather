@@ -37,7 +37,7 @@ a {
     display: flex;
     font-size: 1.75vw;
     align-items: center;
-    margin-left: 20px;
+    margin: 20px;
 }
 
 .search {
@@ -54,9 +54,8 @@ a {
 .home {    
     background-repeat: space;
     background-position: center;
-    background-size: contain;
-    padding: 10px;
-    padding-bottom: 2%;
+    background-size: contain;    
+    padding-bottom: 3%;
     display: flex;
     flex-direction: column;   
 }
