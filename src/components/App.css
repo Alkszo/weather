@@ -206,11 +206,11 @@ h2 span {
         margin: 5px;
     }
     .weather-detailed-description {
-        font-size: 2.5vw;
+        font-size: 3.25vw;
     }
     .weather-details-content img {    
-        height: 75px;
-        width: 75px;
+        height: 50px;
+        width: 50px;
     }
 }
 
