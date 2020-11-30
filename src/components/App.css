@@ -181,8 +181,7 @@ h2 span {
 }
 
 .weather-info {
-    display: flex;
-    align-items: center;
+    display: flex;    
     flex-direction: row;
     justify-content: space-evenly;    
 }
@@ -191,11 +190,20 @@ h2 span {
     margin: 25px;
 }
 
+.weather-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
 .weather-numbers {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+    
 }
 
 .weather-details-content img {    

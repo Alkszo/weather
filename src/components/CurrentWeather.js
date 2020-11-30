@@ -18,8 +18,8 @@ const CurrentWeather = ({ data, icons, getIcon }) => {
 
             <img src={getIcon(data[0]).length === 1 ? getIcon(data[0])[0].icon : `http://openweathermap.org/img/wn/${data[0].weather[0].icon}@2x.png`} alt="icon" />
             <div><p>{data[0].weather[0].description}</p></div>
-            <div>Temperature: {(data[0].main.temp * 2).toFixed() / 2}</div>
-            <div>Feels like: {(data[0].main.feels_like * 2).toFixed() / 2}</div>
+            <div>Temperature: {(data[0].main.temp * 2).toFixed() / 2} &deg;C</div>
+            <div>Feels like: {(data[0].main.feels_like * 2).toFixed() / 2} &deg;C</div>
             <div>Humidity: {data[0].main.humidity} %</div>
             <CurrentWeatherDetails todaysWeather={todaysWeather} icons={icons} getIcon={getIcon}/>
         </div>

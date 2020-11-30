@@ -17,14 +17,18 @@ const CurrentWeatherDetails = ({ todaysWeather, icons, getIcon }) => {
             </div>
             <div className="weather-info">
     
-                <div>
+                <div className="weather-icon">
+                    <div>
                     <img src={getIcon(hour).length === 1  ? getIcon(hour)[0].icon : `http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`} alt="icon" />
+                    </div>
+                    <div>
                     <p>{hour.weather[0].description}</p>
+                    </div>
                 </div>
                 <div className="weather-numbers">
-                    <div><p>Temperature: {(hour.main.temp * 2).toFixed() / 2} </p>                  
+                    <div><p>Temperature: {(hour.main.temp * 2).toFixed() / 2} &deg;C</p>                  
                     </div>
-                    <div><p>Feels like: {(hour.main.feels_like * 2).toFixed() / 2}</p>
+                    <div><p>Feels like: {(hour.main.feels_like * 2).toFixed() / 2} &deg;C</p>
                     </div>
                     <div><p>Humidity: {hour.main.humidity} %</p>
                     </div>
