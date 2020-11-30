@@ -23,7 +23,7 @@ const LocationError = ({ onSearch, getLocation }) => {
                 <div>
                     <form onSubmit={handleSubmit} className="search">
                         <input type="text" onChange={handleChange} />
-                        <input type="submit" value="Search" className="submit-button" />
+                        <input type="submit" value="Search" />
                     </form>
                 </div>
             </div>
